@@ -1,0 +1,35 @@
+.ju-btn
+  @apply box-border relative inline-flex items-center justify-between m-0 text-center
+
+/**
+ * kind
+ */
+.ju-btn--primary
+  @apply bg-hex-[#0f62fe] text-white hover:bg-hex-[#0353e9] active:bg-hex-[#002d9c] focus:border focus:border-[#0f62fe] focus:shadow-default
+.ju-btn--secondary
+  @apply bg-hex-[#393939] text-white hover:bg-hex-[#4c4c4c]
+.ju-btn--tertiary
+  @apply bg-transparent text-[#0353e9] border border-[#0353e9]
+.ju-btn--danger
+  @apply bg-hex-[#b81921] text-white
+.ju-btn--ghost
+  @apply bg-transparent text-[#0353e9]
+
+/**
+ * size
+ */
+.ju-btn--default
+  @apply px-[16px] py-[12px]
+  &:not(.ju-btn--ghost)
+    @apply pl-[16px] pr-[63px] py-[12px]
+.ju-btn--field
+  @apply px-[12px] py-[8px]
+  &:not(.ju-btn--ghost)
+    @apply pl-[12px] pr-[60px] py-[8px]
+.ju-btn--small
+  @apply px-[16px] py-[5px]
+  &:not(.ju-btn--ghost)
+    @apply pl-[12px] pr-[60px] py-[5px]
+
+.ju-btn:not(:disabled)
+  @apply cursor-pointer
